@@ -3,10 +3,10 @@ require_once 'conection.php';
 
 if(isset($_POST)){
 
-	$nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
-	$apaterno = isset($_POST['apaterno']) ? $_POST['apaterno'] : '';
-	$amaterno = isset($_POST['amaterno']) ? $_POST['amaterno'] : '';
-	$pass = isset($_POST['pass']) ? $_POST['pass'] : '';
+	$nombre = isset($_POST['nombre']) ? validar($_POST['nombre']) : '';
+	$apaterno = isset($_POST['apaterno']) ? validar($_POST['apaterno']) : '';
+	$amaterno = isset($_POST['amaterno']) ? validar($_POST['amaterno']) : '';
+	$pass = isset($_POST['pass']) ? validar($_POST['pass']) : '';
 
 	if(empty($nombre) || empty($apaterno) || empty($amaterno) || empty($pass)){
 		echo 'Error en el formulario';
@@ -24,5 +24,13 @@ if(isset($_POST)){
 
 }else{
 	echo 'Error en el formulario';
+}
+
+function validar($data){
+
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
 }
 ?>
