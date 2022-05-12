@@ -43,28 +43,28 @@ $(document).ready(function(){
 			}
 		},
 		messages: {
-			name: {
+			nombre: {
 				required: "El nombre es requerido",
 				minlength: "El nombre debe ser de al menos 3 caracteres",
 				maxlength: "El nombre debe tener menos de 20 caracteres"
 			},
 			apaterno: {
-				equired: "El apellido paterno es requerido",
+				required: "El apellido paterno es requerido",
                                 minlength: "El apellido paterno debe ser de al menos 3 caracteres",
                                 maxlength: "El apellido paterno  debe tener menos de 20 caracteres"
 			},
 			amaterno: {
-				equired: "El apellido materno es requerido",
+				required: "El apellido materno es requerido",
                                 minlength: "El apellido materno debe ser de al menos 3 caracteres",
                                 maxlength: "El apellido materno debe tener menos de 20 caracteres"
 			},
 			pass: {
-				equired: "La contraseña es requerida",
+				required: "La contraseña es requerida",
                                 minlength: "La contraseña debe ser de al menos 8 caracteres",
                                 maxlength: "La contraseña debe tener menos de 15 caracteres"
 			},
 			passrepeated: {
-				equired: "La contraseña es requerida",
+				required: "La contraseña es requerida",
                                 minlength: "La contraseña debe ser de al menos 8 caracteres",
                                 maxlength: "La contraseña debe tener menos de 15 caracteres",
 				equalTo: "Las contraseñas deben de coincidir"
